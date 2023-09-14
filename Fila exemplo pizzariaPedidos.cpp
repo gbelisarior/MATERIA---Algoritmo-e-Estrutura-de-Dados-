@@ -16,29 +16,29 @@ int main() {
         cout << "Escolha uma opcao: ";
         cin >> escolha;
 
-        if (escolha == 1) { // informa o pedido feito, colhendo o valor 1 pois o tipo é inteiro !
+        if (escolha == 1) { // informa o pedido feito, colhendo o valor 1 pois o tipo Ã© inteiro !
             cout << "\nInforme o nome da pizza: ";
             cin >> nomePizza;
-            pedidos.push(nomePizza); // pedidos.push(nomePizza); é usado para adicionar um novo pedido à fila.
+            pedidos.push(nomePizza); // pedidos.push(nomePizza); Ã© usado para adicionar um novo pedido Ã  fila.
             cout << "Pedido de " << nomePizza << " adicionado com sucesso!" << endl; // Nova linha adicionada.
             continue;
         }
 
-        if (escolha == 2) { // informa que o pedido está sendo preparado, colhendo valor 2 pois o tipo é inteiro !
-            if (pedidos.empty()) { // if (pedidos.empty()) verifica se não há pedidos pendentes
-                cout << "\nNão há pedidos pendentes.\n";
+        if (escolha == 2) { // informa que o pedido estÃ¡ sendo preparado, colhendo valor 2 pois o tipo Ã© inteiro !
+            if (pedidos.empty()) { // if (pedidos.empty()) verifica se nÃ£o hÃ¡ pedidos pendentes
+                cout << "\nNÃ£o hÃ¡ pedidos pendentes.\n";
             } else {
                 cout << "\nPreparando os pedidos:\n";
                 while (!pedidos.empty()) {
-                    cout << pedidos.front() << endl; // pedidos.front() é usado para obter o próximo pedido a ser preparado
-                    pedidos.pop(); //pedidos.pop(); é usado para remover o pedido que foi preparado.
+                    cout << pedidos.front() << endl; // pedidos.front() Ã© usado para obter o prÃ³ximo pedido a ser preparado
+                    pedidos.pop(); //pedidos.pop(); Ã© usado para remover o pedido que foi preparado.
                 }
             }
         }
 
-        if (escolha == 3) { //Verifica se o usuário escolheu a opção 3 no menu.
-            cout << "\nPedido realizado\n"; //Se condição do if verdadeira (usuário escolhe 3) então a linha imprime a mensagem "Pedido realizado" no console.
-            break; //O break é usado para sair do loop while, neste caso, ele faz com que o programa saia do loop infinito e encerrando o programa.
+        if (escolha == 3) { //Verifica se o usuÃ¡rio escolheu a opÃ§Ã£o 3 no menu.
+            cout << "\nPedido realizado\n"; //Se condiÃ§Ã£o do if verdadeira (usuÃ¡rio escolhe 3) entÃ£o a linha imprime a mensagem "Pedido realizado" no console.
+            break; //O break Ã© usado para sair do loop while, neste caso, ele faz com que o programa saia do loop infinito e encerrando o programa.
         }
     }
 
